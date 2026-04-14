@@ -10,7 +10,7 @@
             --primary: #2c3e50;
             --accent: #a481cb;
             --text: #333;
-            --light-bg: #8b6bbb; /* Màu nền tím bạn đã chọn */
+            --light-bg: #8b6bbb; 
         }
 
         body {
@@ -33,7 +33,7 @@
 
         header {
             text-align: center;
-            border-bottom: 2px solid #eee; /* Đổi sang màu nhạt cho thanh lịch */
+            border-bottom: 2px solid #eee;
             padding-bottom: 30px;
             margin-bottom: 30px;
         }
@@ -91,23 +91,35 @@
             gap: 30px;
         }
 
-        .exp-item {
-            margin-bottom: 25px;
+        .item-content {
+            margin-bottom: 20px;
         }
 
-        .exp-title {
+        .item-title {
             font-weight: bold;
             color: var(--primary);
+            font-size: 1.1em;
             display: block;
         }
 
-        .exp-meta {
-            font-size: 0.85em;
+        .item-meta {
+            font-size: 0.9em;
             color: var(--accent);
             font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
         }
 
-        ul.skills-list {
+        .detail-text {
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+
+        .detail-text strong {
+            color: var(--primary);
+        }
+
+        .skills-list {
             list-style: none;
             padding: 0;
             display: flex;
@@ -126,10 +138,6 @@
         @media (max-width: 600px) {
             .grid {
                 grid-template-columns: 1fr;
-            }
-
-            .resume-container {
-                padding: 20px;
             }
         }
     </style>
@@ -155,19 +163,37 @@
         <div class="grid">
             <section class="section">
                 <h2>Education</h2>
-                <div class="exp-item">
-                    <span class="exp-title">Asia University</span>
-                    <span class="exp-meta">Student - Finance Major</span>
-                    <p>Focused on economics, numerical analysis, and understanding financial systems.</p>
+                <div class="item-content">
+                    <span class="item-title">Asia University</span>
+                    <span class="item-meta">Student - Finance Major</span>
+                    
+                    <div class="detail-text">
+                        <strong>Core Focus:</strong> Advanced Econometrics, Financial Risk Management, and Digital Finance infrastructure.
+                    </div>
+                    <div class="detail-text">
+                        <strong>Project Work:</strong> Currently developing a comprehensive research project titled "The Paradigm Shift in Finance," analyzing the transition from traditional banking to FinTech-driven digital payment ecosystems.
+                    </div>
+                    <div class="detail-text">
+                        <strong>Language:</strong> Actively studying Traditional Chinese to bridge communication in the regional financial market.
+                    </div>
                 </div>
             </section>
+
             <section class="section">
                 <h2>Experience</h2>
-                <div class="exp-item">
-                    <span class="exp-title">Investing Service Staff</span>
-                    <span class="exp-meta">Global Businesses</span>
-                    <p>Gained experience in professional analysis and real-world economic observation with many
-                        businesses around the world.</p>
+                <div class="item-content">
+                    <span class="item-title">Investing Service Staff</span>
+                    <span class="item-meta">Global Businesses</span>
+                    
+                    <div class="detail-text">
+                        <strong>Analysis:</strong> Conducted quantitative research on international market trends to support investment decision-making processes.
+                    </div>
+                    <div class="detail-text">
+                        <strong>Economic Observation:</strong> Monitored macroeconomic indicators across diverse global sectors to identify emerging growth opportunities.
+                    </div>
+                    <div class="detail-text">
+                        <strong>Reporting:</strong> Synthesized complex financial data into actionable insights for cross-border business evaluations.
+                    </div>
                 </div>
             </section>
         </div>
@@ -179,15 +205,21 @@
                 <li>Analysis</li>
                 <li>Numerical Modeling</li>
                 <li>Economic Research</li>
+                <li>HTML/CSS</li>
             </ul>
         </section>
 
         <section class="section">
             <h2>Interests & Hobbies</h2>
-            <p>
-                I usually catch up with the news which is one of the main elements that can make a big impact on how the
-                money grows.
-            </p>
+            <div class="detail-text">
+                <strong>Market Intelligence:</strong> I am a dedicated consumer of global financial news (Bloomberg, Financial Times), focusing on how geopolitical shifts influence capital flow and asset valuation.
+            </div>
+            <div class="detail-text">
+                <strong>Visual Storytelling:</strong> Beyond numbers, I enjoy photography and drawing. I apply this creative lens to data visualization, ensuring that financial reports are not only accurate but also visually intuitive.
+            </div>
+            <div class="detail-text">
+                <strong>Sports:</strong> Staying active through tennis and badminton, which helps maintain the discipline and focus required for analytical work.
+            </div>
         </section>
     </div>
 
